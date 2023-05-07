@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 73, 14, 0.5),rgba(5, 73, 14, 0.5)),url(images/headertest2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 75px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: solid #fff;
+    padding: 12px 32px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #034804;
+    background: #034804;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 33px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #09320A;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+.background2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Second\ Page\ Design.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+.rules{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.rules-col{
+    flex-basis: 31%;
+    background: #034804;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.rules-col:hover{
+    box-shadow: 0 0 20px 0px #000000
+}
+.rules-col2{
+    flex-basis: 31%;
+    background: #034804;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.rules-col2:hover{
+    box-shadow: 0 0 20px 0px #000000
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.brackets{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+.brackets-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.brackets-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(236, 238, 205, 0.39);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.background3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/third\ page\ design.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+.games{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;   
+    color: #045B06;
+}
+.games-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left
+}
+.games-col img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.games-col img:hover{
+    transform: scale(1.1);
+}
+.background4{
+    min-height: 30vh;
+    width: 100%;
+    background-image: url(images/Untitled\ design\ \(4\).png);
+    background-position: center;
+    background-size: cover;
+    position: relative;  
+}
+button{
+    background-color:#034804;
+    border: none;
+    position: relative;
+    transform: translate(-50%, -25%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color:#0a7a0c;
+}
+.footer{
+    text-align: center;
+    transform: translate(0%, 700%);
+    font-weight: lighter;
+    color: #034804;
+    font-size: 13px;
+}
+
+/*-------Valorant Page-------*/
+
+.sub-header{ 
+    height: 50vh;
+    width: 100%;
+    background-image: url(IMAGES/valbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 75px;
+}
+.valbg2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(IMAGES/valbg2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.mapbans{
+    text-align: center;
+    color: #fff;
+}
+.mapbans h1{
+    padding-top: 100px;
+    font-weight: bolder;
+}
+.mapbans h3{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.mapbans-col{
+    background: #723137;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.mapbans-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.mapbans-col p{
+    font-weight: bolder;
+    color: #fff;
+    font-size: larger;
+}
+.guidelines{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+.guidelines h1{
+    padding-bottom: 25px;
+}
+.guidelines-col{
+    background: #723137;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.guidelines-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.valbg3{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/valbg3.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;   
+}
+.brackets-val h1{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.brackets-val img{
+    width: 80%;
+    transition: 0.5s;
+}
+.brackets-val img:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+
+/*-------Mobile Legends Page-------*/
+
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: url(IMAGES/mlbbbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header2 h1{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 75px;
+}
+.mlbbbg2{
+    height: 160vh;
+    width: 100%;
+    background-image: url(images/mlbbbg2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;   
+}
+.ml-guidelines{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+.ml-guidelines h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.ml-guidelines-col{
+    background: #2d2579;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.ml-guidelines-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.brackets-ml h1{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.brackets-ml img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    transition: 0.5s;
+}
+.brackets-ml img:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+
+/*-------Call of Duty Mobile Page-------*/
+
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: url(IMAGES/CodmBg3.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header3 h1{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 75px;
+}
+.codmbg2{
+    height: 175vh;
+    width: 100%;
+    background-image: url(IMAGES/codmmainbg3.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.gamemodes{
+    text-align: center;
+    color: #fff;
+}
+.gamemodes h1{
+    padding-top: 100px;
+    font-weight: bolder;
+}
+.gamemodes-col{
+    background: #b0890b;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.gamemodes-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.gamemodes-col p{
+    font-weight: bolder;
+    color: #fff;
+    font-size: larger;
+}
+.bans{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+.bans h1{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.bans-col{
+    background: #b0890b;
+    border-radius: 10px;
+    margin-bottom: .5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.bans-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.guidelines-codm{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+.guidelines-codm h1{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.guidelines-codm-col{
+    background: #b0890b;
+    border-radius: 10px;
+    margin-bottom: .5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.guidelines-codm-col:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+.codmbg3{
+    padding-top: 50px;
+    height: 105vh;
+    width: 100%;
+    background-image: url(IMAGES/codmmm2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.brackets-codm h1{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.brackets-codm img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    transition: 0.5s;
+}
+.brackets-codm img:hover{
+    box-shadow: 0 0 20px 0px #000000;
+}
+
