@@ -281,6 +281,7 @@ button:hover{
     background-color:#0a7a0c;
 }
 .footer{
+    padding-top: 0px;
     text-align: center;
     transform: translate(0%, 700%);
     font-weight: lighter;
