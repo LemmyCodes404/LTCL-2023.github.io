@@ -282,7 +282,6 @@ button:hover{
 }
 .footer{
     text-align: center;
-    transform: translate(0%, 700%);
     font-weight: lighter;
     color: #034804;
     font-size: 13px;
