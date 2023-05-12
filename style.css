@@ -304,7 +304,7 @@ button:hover{
     font-size: 75px;
 }
 .valbg2{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-image: url(IMAGES/valbg2.png);
     background-position: center;
@@ -481,7 +481,7 @@ p{
     font-size: 75px;
 }
 .codmbg2{
-    height: 200vh;
+    height: 220vh;
     width: 100%;
     background-image: url(IMAGES/codmmainbg3.png);
     background-position: center;
