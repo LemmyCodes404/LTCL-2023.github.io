@@ -392,6 +392,13 @@ p{
 .brackets-val img:hover{
     box-shadow: 0 0 20px 0px #000000;
 }
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 33px;
+    }
+    .row{
+        flex-direction: column;
+    }
 
 /*-------Mobile Legends Page-------*/
 
@@ -463,6 +470,13 @@ p{
 .brackets-ml img:hover{
     box-shadow: 0 0 20px 0px #000000;
 }
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 33px;
+    }
+    .row{
+        flex-direction: column;
+    }
 
 /*-------Call of Duty Mobile Page-------*/
 
@@ -604,4 +618,10 @@ p{
 .brackets-codm img:hover{
     box-shadow: 0 0 20px 0px #000000;
 }
-
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 33px;
+    }
+    .row{
+        flex-direction: column;
+    }
